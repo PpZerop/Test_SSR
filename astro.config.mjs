@@ -6,3 +6,4 @@ export default defineConfig({
     site: 'https://ppzerop.github.io',
     base: 'Test_SSR',
 });
+
