@@ -90,7 +90,6 @@ import Layout from "../layouts/Layout.astro";
 		const yesButton = document.querySelector(".yes");
 		const noButton = document.querySelector(".no");
 		const allBody = document.querySelector("body");
-		const img = document.querySelector("img");
 		noButton.addEventListener("mouseover", function () {
 			function getRandomNumber() {
 				return Math.floor(Math.random() * 301);
@@ -102,11 +101,10 @@ import Layout from "../layouts/Layout.astro";
 		yesButton.addEventListener("click", function () {
 			const h1 = document.querySelector("h1");
 			h1.style.fontSize = "50px";
-			h1.innerHTML = "Yes I Do🤍";
-			img.style.display = "block";
+			h1.innerHTML = "Yes I Do🤍<br> Love You baby🤍";
 			yesButton.style.display = "none";
 			noButton.style.display = "none";
-			// allBody.style.backgroundColor = "rgb(255,73,182)";
+			allBody.style.backgroundColor = "rgb(255,73,182)";
 		});
 	</script>
 </Layout>
